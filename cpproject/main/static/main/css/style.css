@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(250, 249, 245);
+    text-align: center;
+}
+
+#timer {
+    font-family: "serif";
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.input-group {
+    margin: 10px;
+    width: 125px;
+}
+
+.counter {
+    margin: 2px;
+}

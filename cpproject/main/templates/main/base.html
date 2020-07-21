@@ -1,0 +1,59 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>CSES CP</title>
+  </head>
+  <body>
+    
+    <div class="content">
+        <div class="row justify-content-center">
+            <h1 class="display-4">CSES Problemset Counter</h1>
+        </div>
+
+        <div>
+            <h1 id="timer" class='display-4'>00 : 00 : 00</h1>
+            <div class="row justify-content-center">
+            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button id="start" type="button" class="btn btn-secondary">Start</button>
+                    <button id="pause" type="button" class="btn btn-secondary">Pause</button>
+                    <button id="reset_timer" type="button" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="counter">
+            <h1 class="count"><span id='counter'>0</span>/200</h1>
+        </div>
+        <div class="row justify-content-center">
+            <button id="increment" type="button" class="btn btn-primary counter">+1</button>
+            <button id="reset_count" type="button" class="btn btn-danger counter">Reset</button>
+            <button id="decrement" type="button" class="btn btn-success counter">-1</button>
+        </div>
+        <div class="row justify-content-center">
+            <div class="input-group">
+                <div class="input-group-prepend"></div>
+                <button id="set" type="button" class="btn btn-info">Set</button>
+                <input id="number" type="text" class="form-control" placeholder="0" aria-label="Input group example" aria-describedby="btnGroupAddon">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="{% static 'main/js/stopwatch.js' %}"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+  </body>
+</html>
